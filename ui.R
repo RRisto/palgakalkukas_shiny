@@ -20,10 +20,10 @@ shinyUI(fluidPage(
                         selected = "Netopalk"),
             
             selectInput("kp", label = h3("Kogumispension"), 
-                        choices = list("Olen liitunud (2%)"=1,
-                                       "Olen esitanud tõstmise avalduse (3%)"=2, 
-                                       "Ei ole liitunud (0%)"=3), 
-                        selected = 1),
+                        choices = list("Olen liitunud (2%)"="1",
+                                       "Olen esitanud tõstmise avalduse (3%)"="2", 
+                                       "Ei ole liitunud (0%)"="3"), 
+                        selected = "1"),
             
             checkboxInput("tm.vaba", label="Tulumaksuvaba miinimum (154€ kuus)",
                           value = TRUE),

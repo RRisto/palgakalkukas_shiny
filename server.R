@@ -14,8 +14,7 @@ shinyServer(
            isolate(palk(palk=input$palk, liik=input$liik,
                              tm.vaba=input$tm.vaba, tm.maar=0.2, sm.maar=0.33, 
                              kp.maar=kp, tk.maar.tootaja=input$tk.tootaja, 
-                 tk.maar.tooandja=input$tk.tooandja)
-           )
+                 tk.maar.tooandja=input$tk.tooandja))
         })
     }
 )

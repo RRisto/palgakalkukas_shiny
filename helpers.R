@@ -58,12 +58,12 @@ palk <- function(palk, liik="neto",tm.vaba=T, tm.maar=0.2, sm.maar=0.33,
                 tk.tootaja, tk.tooandja)
     }
     #tulemite koondamine ja esitamine   
-    tulem.names=c("Brutopalk", "Netopalk", "Tööandja kulu", 
+    tulem.names=c("Brutopalk", "Netopalk", "Tooandja kulu", 
                   "Maksuametile kantav summa", "Tulumaks",
-                  "Sotsiaalmaks", "Kogumispension", "Töötuskindlustus (töötaja)",
-                  "Töötuskindlustus (tööandja)")
+                  "Sotsiaalmaks", "Kogumispension", "Tootuskindlustus (tootaja)",
+                  "Tootuskindlustus (tooandja)")
     tulem.kokku=data.frame(tulem.names, tulem)
-    names(tulem.kokku)=c(" ", "Summa (€)")
+    names(tulem.kokku)=c(" ", "Summa (eurot)")
     
     print(tulem.kokku, row.names=F)
 }
